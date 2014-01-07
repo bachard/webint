@@ -1,0 +1,118 @@
+* { margin: 0; padding: 0; outline: 0; }
+
+body{
+    height:100%;
+}
+
+header.main_header {
+    top:0;
+    height:30px;
+    text-align:center;
+    background-color:#992C2C;
+    color:white;
+    font-weight:bold;
+}
+
+nav {
+    margin-top:10px;
+    padding-bottom:5px;
+    text-align:center;
+    border-bottom:1px solid black;
+}
+
+nav a {
+    text-decoration:none;
+    background-color:#995252;
+    color:white;
+    padding:5px;
+    border-radius:5px;
+}
+
+nav a:hover {
+    background-color:white;
+    color: #995252;
+    border:1px solid #995252;
+}
+
+nav ul {
+    list-style:none;
+}
+
+nav ul li {
+    display:inline;
+    margin-right:10px;
+}
+
+article header {
+    text-align:left;
+    margin-left:25px;
+    border:none;
+}
+
+article section{
+
+}
+
+section.main {
+    position:absolute;
+    top:0px;
+    left:200px;
+    float:right;
+}
+
+aside {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:200px;
+    height:100%;
+    padding-top:40px;
+    background-color:#992C2C;
+}
+
+aside #personal_info {
+    width:100px;
+    height:100px;
+    margin:auto;
+    border:2px solid #FFFFFF;
+}
+
+footer {
+    text-align:center;
+    font-style:italic;
+    font-size:75%;
+    width:100%;
+    margin-top:25px;
+    padding-top:25px;
+    border-top:1px solid black;
+}
+
+/********************************/
+/* DIALOG STYLE                 */
+/********************************/
+
+
+.dialog_box {
+    z-index:10;
+    position:relative;
+    margin:auto;
+    top:200px;
+    background-color:#cccccc;
+    border:1px solid #992C2C;
+    border-radius:5px;
+    height:300px;
+    width:500px;   
+}
+
+.dialog_header {
+    background-color:#992C2C;
+    color:white;
+    border-bottom:1px solid black;
+    padding:2px;
+    text-align:center;
+}
+
+.dialog_body {
+    margin:5px;
+
+}
