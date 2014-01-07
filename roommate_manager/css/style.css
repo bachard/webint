@@ -99,9 +99,6 @@ footer {
     top:200px;
     background-color:#cccccc;
     border:1px solid #992C2C;
-    border-radius:5px;
-    height:300px;
-    width:500px;   
 }
 
 .dialog_header {
@@ -110,9 +107,28 @@ footer {
     border-bottom:1px solid black;
     padding:2px;
     text-align:center;
+    font-size:125%;
+    font-weight:bold;
 }
 
 .dialog_body {
     margin:5px;
 
+}
+
+.dialog_buttons {
+    background-color:#992C2C;
+    color:white;
+    border-top:1px solid black;
+    border-left:1px solid black;
+    padding:5px 10px 5px 5px;
+    position:absolute;
+    bottom:0px;
+    right:0px;
+}
+
+.dialog_buttons button {
+    margin-left:10px;
+    border-radius:0px;
+    background-color:#ffffff;
 }
