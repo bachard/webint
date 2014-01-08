@@ -4,7 +4,7 @@
  */
 
 function Box(id, width, height) {
-    
+        
     this.show = function() {
 	document.body.appendChild(this.element);
     }
@@ -18,12 +18,12 @@ function Box(id, width, height) {
 	// we add the elements to the div 
 	this.element.appendChild(this.title);
 	this.element.appendChild(this.body);
-	this.element.appendChild('<section class="dialog_buttons"></section>');
+	this.element.appendChild(this.buttons_section);
 	
 	if(this.buttons) {
-	    var buttons_section = this.element.querySelector(".dialog_buttons");
+	    //var buttons_section = this.element.querySelector(".dialog_buttons");
 	    for(b in this.buttons) {
-		buttons_section.appendChild(this.buttons[b].element);
+		this.buttons_section.appendChild(this.buttons[b].element);
 	    }
 	}
 
@@ -36,12 +36,12 @@ function Box(id, width, height) {
     }
 
     this.setTitle = function(title) {
-	this.title = '<header class="dialog_header">'+title+'</header>';
+	this.title.innerHTML = title;//'<header class="dialog_header">'+title+'</header>';
 	this.refresh();
     }
     
     this.setBody = function(body) {
-	this.body = '<section class="dialog_body">'+body+'</section>';
+	this.body.innerHTML = body;//'<section class="dialog_body">'+body+'</section>';
 	this.refresh();
     }
     
@@ -67,8 +67,12 @@ function Box(id, width, height) {
     //this.element.width = width + 'px';
     //this.element.height = height + 'px';
     this.element.className = 'dialog_box';
-    this.title = null;
-    this.body = null;
+    this.title = document.createElement('header');
+    this.title.className = 'dialog_header';
+    this.body = document.createElement('section');
+    this.body.className = 'dialog_body';
+    this.buttons_section = document.createElement('section');
+    this.buttons_section.className = 'dialog_buttons';
     // object containing all the buttons of the box
     // Button object
     this.buttons = {};
