@@ -91,9 +91,10 @@ footer {
 
 .dialog_box {
     z-index:10;
-    position:relative;
     margin:auto;
-    top:200px;
+    position: absolute;
+    top: 200px;
+    left: 30%;
     background-color:#cccccc;
     border:1px solid #992C2C;
 }
