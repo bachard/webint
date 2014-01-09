@@ -6,7 +6,7 @@ body{
 
 header.main_header {
     top:0;
-    height:30px;
+    height:60px;
     text-align:center;
     background-color:#992C2C;
     color:white;
@@ -54,19 +54,24 @@ article section{
 }
 
 section.main {
-    position:absolute;
-    top:0px;
-    left:200px;
-    float:right;
+    display: inline-block;
+    vertical-align: top;
+    width:85%;
+}
+td /* Toutes les cellules des tableaux... */
+{
+    border: 1px solid black; /* auront une bordure de 1px */
+}
+th /* Toutes les cellules des tableaux... */
+{
+    border: 1px solid black; /* auront une bordure de 1px */
 }
 
 aside {
-    position:absolute;
-    top:0px;
-    left:0px;
-    width:200px;
-    height:100%;
-    padding-top:40px;
+    display: inline-block;
+    vertical-align: top;
+    width:14%;
+    height:500px;
     background-color:#992C2C;
 }
 
@@ -94,9 +99,10 @@ footer {
 
 .dialog_box {
     z-index:10;
-    position:relative;
     margin:auto;
-    top:200px;
+    position: absolute;
+    top: 200px;
+    left: 30%;
     background-color:#cccccc;
     border:1px solid #992C2C;
 }
