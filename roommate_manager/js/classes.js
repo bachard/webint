@@ -5,12 +5,29 @@
 
 function Box(id, parent, width, height, box_class='dialog_box', header_class='dialog_header', body_class='dialog_body', buttons_class='dialog_buttons') {
         
-    this.show = function() {
-	parent.appendChild(this.element);
+    this.open = function() {
+	if(!document.getElementById(this.element.id)) {
+	    parent.appendChild(this.element);    
+	}	
     }
     
+    this.close = function() {
+	if(document.getElementById(this.element.id)) {
+	    parent.removeChild(this.element);
+	}
+    }
+
+    this.show = function() {
+	if(document.getElementById(this.element.id)) {
+	    this.element.style.display = 'block';
+	}
+    }
+
     this.hide = function() {
-	parent.removeChild(this.element);
+	if(document.getElementById(this.element.id)) {
+	    this.element.style.display = 'none';
+	}
+	
     }
     
     this.refresh = function() {
@@ -87,6 +104,7 @@ function Box(id, parent, width, height, box_class='dialog_box', header_class='di
     this.body.className = body_class;
     this.buttons_section = document.createElement('section');
     this.buttons_section.className = buttons_class;
+    this.hide();
     // object containing all the buttons of the box
     // Button object
     this.buttons = {};
