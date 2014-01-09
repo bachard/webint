@@ -17,14 +17,13 @@ nav {
     margin-top:10px;
     padding-bottom:5px;
     text-align:center;
-    border-bottom:1px solid black;
 }
 
 nav a {
     text-decoration:none;
-    background-color:#995252;
     color:white;
     padding:5px;
+    background-color:#995252;
     border-radius:5px;
 }
 
@@ -36,11 +35,17 @@ nav a:hover {
 
 nav ul {
     list-style:none;
+    padding-bottom: 10px;
+    border-bottom : 3px solid black;
 }
 
 nav ul li {
     display:inline;
     margin-right:10px;
+}
+
+nav ul li.active {
+
 }
 
 article header {
@@ -63,7 +68,7 @@ aside {
     display: inline-block;
     vertical-align: top;
     width:14%;
-    height:500px;
+    height:600px;
     background-color:#992C2C;
 }
 
