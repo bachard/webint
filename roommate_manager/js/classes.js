@@ -5,12 +5,29 @@
 
 function Box(id, parent, width, height, box_class='dialog_box', header_class='dialog_header', body_class='dialog_body', buttons_class='dialog_buttons') {
         
-    this.show = function() {
-	parent.appendChild(this.element);
+    this.open = function() {
+	if(!document.getElementById(this.element.id)) {
+	    parent.appendChild(this.element);    
+	}	
     }
     
+    this.close = function() {
+	if(document.getElementById(this.element.id)) {
+	    parent.removeChild(this.element);
+	}
+    }
+
+    this.show = function() {
+	if(document.getElementById(this.element.id)) {
+	    this.element.style.display = 'block';
+	}
+    }
+
     this.hide = function() {
-	parent.removeChild(this.element);
+	if(document.getElementById(this.element.id)) {
+	    this.element.style.display = 'none';
+	}
+	
     }
     
     this.refresh = function() {
@@ -58,6 +75,20 @@ function Box(id, parent, width, height, box_class='dialog_box', header_class='di
 	this.refresh();
     }
     
+    // import html content directly in the body of the box
+    this.importHTML = function(url) {
+	var xhr = getXMLHttpRequest();
+	var self = this;
+	xhr.onreadystatechange = function() {
+	    if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+		self.setBody(xhr.responseText);
+	    }
+	};
+	
+	xhr.open("GET", url, true);
+	xhr.send(null);
+    }
+    
     // we create a div in the html document
     this.element = document.createElement('div');
     
@@ -73,6 +104,7 @@ function Box(id, parent, width, height, box_class='dialog_box', header_class='di
     this.body.className = body_class;
     this.buttons_section = document.createElement('section');
     this.buttons_section.className = buttons_class;
+    this.hide();
     // object containing all the buttons of the box
     // Button object
     this.buttons = {};
@@ -95,3 +127,36 @@ function Button(id, name) {
     }
 
 }
+
+/**
+ * Useful functions
+ *
+ *
+ */
+
+/**
+ * returns and XMLHttpRequest object 
+ * compatible with (almost) all browsers
+ * source: openclassroom
+ */
+function getXMLHttpRequest() {
+    var xhr = null;
+    
+    if (window.XMLHttpRequest || window.ActiveXObject) {
+        if (window.ActiveXObject) {
+            try {
+                xhr = new ActiveXObject("Msxml2.XMLHTTP");
+            } catch(e) {
+                xhr = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+        } else {
+            xhr = new XMLHttpRequest(); 
+        }
+    } else {
+        alert("Votre navigateur ne supporte pas l'objet XMLHTTPRequest...");
+        return null;
+    }
+    
+    return xhr;
+}
+
