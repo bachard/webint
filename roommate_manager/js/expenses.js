@@ -7,11 +7,20 @@ var expense_box = new Box('box', document.getElementById('place_here'), 500, 100
 
     var but3 = new Button('test', 'quit');
 
-    but3.onclick(function() { expense_box.hide() });
+    but3.onclick( closure );
 
     expense_box.addButton(but3);
     
-    document.getElementById('expense_box').addEventListener('click', function() { expense_box.open(); expense_box.show(); });
+    document.getElementById('expense_box').addEventListener('click', animation );
+    
+    function animation() {
+	expense_box.open();
+	document.getElementById('zone').style.height=100+'px';
+	expense_box.show();
+    }
 
-    /*document.getElementById('box').style.height=100+'px';*/
+    function closure(){
+	document.getElementById('zone').style.height=0+'px';
+	/*expense_box.hide()*/
+    }
 }

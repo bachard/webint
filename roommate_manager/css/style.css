@@ -146,6 +146,15 @@ footer {
 
 /* EXPENSE BOX STYLE */
 
+.coco {
+	height:20px:
+}
+
+.animation {
+	height:20px;
+	transition: height 1s; -moz-transition: height 1s;-webkit-transition: height 1s;-o-transition: height 1s; overflow: hidden;
+}
+
 .expense_box {
 	z-index:10;
     	position:relative;
