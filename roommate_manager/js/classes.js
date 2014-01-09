@@ -3,14 +3,14 @@
  *
  */
 
-function Box(id, width, height) {
+function Box(id, parent, width, height, box_class='dialog_box', header_class='dialog_header', body_class='dialog_body', buttons_class='dialog_buttons') {
         
     this.show = function() {
-	document.body.appendChild(this.element);
+	parent.appendChild(this.element);
     }
     
     this.hide = function() {
-	document.body.removeChild(this.element);
+	parent.removeChild(this.element);
     }
     
     this.refresh = function() {
@@ -66,13 +66,13 @@ function Box(id, width, height) {
     this.setHeight(height);
     //this.element.width = width + 'px';
     //this.element.height = height + 'px';
-    this.element.className = 'dialog_box';
+    this.element.className = box_class;
     this.title = document.createElement('header');
-    this.title.className = 'dialog_header';
+    this.title.className = header_class;
     this.body = document.createElement('section');
-    this.body.className = 'dialog_body';
+    this.body.className = body_class;
     this.buttons_section = document.createElement('section');
-    this.buttons_section.className = 'dialog_buttons';
+    this.buttons_section.className = buttons_class;
     // object containing all the buttons of the box
     // Button object
     this.buttons = {};

@@ -3,7 +3,7 @@ window.onload=function() {
     /* Basic example of how to use a box, with the buttons */
     
     // we create the box
-    var dialog_box = new Box('box', 500, 300);
+    var dialog_box = new Box('box', document.body,500, 300);
     // we init the box
     dialog_box.setTitle("Nice box");
     dialog_box.setBody("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie erat vel felis viverra, in interdum eros sollicitudin.");

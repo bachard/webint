@@ -129,3 +129,26 @@ footer {
     border-radius:0px;
     background-color:#ffffff;
 }
+
+/* EXPENSE BOX STYLE */
+
+.expense_button {
+}
+
+.expense_box {
+	z-index:10;
+    	position:relative;
+    	margin:auto;
+    	background-color:gray;
+    	border:1px solid #992C2C;
+}
+
+.expense_header {
+	text-align:center;
+}
+
+.expense_buttons {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
