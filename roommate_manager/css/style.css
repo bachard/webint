@@ -6,7 +6,7 @@ body{
 
 header.main_header {
     top:0;
-    height:30px;
+    height:60px;
     text-align:center;
     background-color:#992C2C;
     color:white;
@@ -54,19 +54,16 @@ article section{
 }
 
 section.main {
-    position:absolute;
-    top:0px;
-    left:200px;
-    float:right;
+    display: inline-block;
+    vertical-align: top;
+    width:85%;
 }
 
 aside {
-    position:absolute;
-    top:0px;
-    left:0px;
-    width:200px;
-    height:100%;
-    padding-top:40px;
+    display: inline-block;
+    vertical-align: top;
+    width:14%;
+    height:500px;
     background-color:#992C2C;
 }
 
