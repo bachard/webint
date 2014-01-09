@@ -11,7 +11,7 @@ var expense_box = new Box('box', document.getElementById('place_here'), 500, 100
 
     expense_box.addButton(but3);
     
-    document.getElementById('expense_box').addEventListener('click', function() { expense_box.show() });
+    document.getElementById('expense_box').addEventListener('click', function() { expense_box.open(); expense_box.show(); });
 
     /*document.getElementById('box').style.height=100+'px';*/
 }
