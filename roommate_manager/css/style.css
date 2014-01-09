@@ -21,31 +21,32 @@ nav {
 
 nav a {
     text-decoration:none;
-    color:white;
+    color:black;
     padding:5px;
-    background-color:#995252;
+    font-size: 20px;
     border-radius:5px;
 }
 
 nav a:hover {
-    background-color:white;
     color: #995252;
-    border:1px solid #995252;
 }
 
 nav ul {
     list-style:none;
-    padding-bottom: 10px;
     border-bottom : 3px solid black;
 }
 
 nav ul li {
-    display:inline;
-    margin-right:10px;
+    display:inline-block;
+    height: 60px;
+    width : 200px;
+    margin-right:15px;
+    /*background: url('../img/onglet.png') no-repeat;*/
+    background: yellow;
 }
 
 nav ul li.active {
-
+    border-bottom: 3px solid yellow;
 }
 
 article header {
