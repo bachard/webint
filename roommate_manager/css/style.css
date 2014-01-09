@@ -63,6 +63,14 @@ section.main {
     vertical-align: top;
     width:85%;
 }
+td /* Toutes les cellules des tableaux... */
+{
+    border: 1px solid black; /* auront une bordure de 1px */
+}
+th /* Toutes les cellules des tableaux... */
+{
+    border: 1px solid black; /* auront une bordure de 1px */
+}
 
 aside {
     display: inline-block;
