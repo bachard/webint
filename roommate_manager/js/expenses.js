@@ -3,7 +3,7 @@ window.onload=function() {
     var expense_box = new Box('box', document.getElementById('place_here'), 500, 100, 'expense_box', 'expense_header', 'expense_body', 'expense_buttons');
     var expense_box2 = new Box('box', document.getElementById('place_here'), 500, 100, 'expense_box', 'expense_header', 'expense_body', 'expense_buttons');
 
-    expense_box.setTitle("Expenses details");
+    expense_box.setTitle("Balance details");
     expense_box.setBody("Food: 20,25€ 05/11/2013");
     expense_box2.setTitle("Personal Expenses details");
     expense_box2.setBody("Barre de fer: 120€ 05/11/2013");
