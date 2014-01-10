@@ -44,7 +44,7 @@ nav ul li {
 }
 
 nav ul li.active {
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid #DBDBDB;
 }
 
 article header {
@@ -65,6 +65,8 @@ section.main {
 
 section.main section {
     padding-top: 20px;
+    background-color: #DBDBDB;
+    margin-top: -5px;
 }
 
 td /* Toutes les cellules des tableaux... */
