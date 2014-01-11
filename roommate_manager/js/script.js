@@ -25,7 +25,7 @@ window.onload=function() {
 
     // ex. of how to bind an event to the onclick event of a button defined in html
     // and not in the js file
-    document.getElementById('show_box').addEventListener('click', function() { dialog_box.open(); dialog_box.show(); });
+    document.getElementById('add_expense').addEventListener('click', function() { dialog_box.open(); dialog_box.show(); });
     
     /*
      * Test de drag and drop sur une image
