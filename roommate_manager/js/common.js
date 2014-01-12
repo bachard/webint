@@ -63,7 +63,7 @@ function initialize() {
     notifications_box.addButton(but_notifications_quit);
 
     notifications_box.setTitle("Notifications");
-    notifications_box.importHTML("source/table.html");
+    notifications_box.importHTML("source/notification.html");
 
     
     var notifications = document.getElementsByClassName('notification');
