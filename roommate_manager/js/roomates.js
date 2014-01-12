@@ -18,20 +18,3 @@ window.onload=function() {
     dialog_box.addButton(but2);
   
     document.getElementById('add_expense').addEventListener('click', function() { dialog_box.open(); dialog_box.show(); });
-
-    /*Table Format*/
-    var arrayLines = document.getElementById("synthesis").rows; //l'array est stocké dans une variable
-
-    for(var i = 0; i < arrayLines.length; i++)
-    {
-	if(i % 2 == 0) 	{
-	    //si la clé est paire
-            arrayLines[i].style.backgroundColor = "#bdcbf5";
-	}
-	
-	else {
-	    //elle est impaire
-            arrayLines[i].style.backgroundColor = "#829eeb";
-	}
-    }
-}
