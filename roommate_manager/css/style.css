@@ -309,7 +309,7 @@ footer {
 /* EXPENSE BLOCK STYLE */
 
 .expense_block {
-    margin-left:10px;
+    margin-left:-4px;
     display:inline-block;
     width:250px;
     height: 150px;
