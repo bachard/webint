@@ -1,10 +1,8 @@
 window.onload=function() { 
     initialize();
     /*Dialog Box Specific*/
-    var expense_box = new Box('box', document.getElementById('zone'), 500, 100, 'expense_box', 'expense_header', 'expense_body', 'expense_buttons');
-    var expense_box2 = new Box('box', document.getElementById('zone'), 500, 100, 'expense_box', 'expense_header', 'expense_body', 'expense_buttons');
-    var expense_box_activated=false;
-    var expense_box2_activated=false;
+    var expense_box = new Box('coco_box', document.getElementById('zone'), 500, 100, 'expense_box', 'expense_header', 'expense_body', 'expense_buttons');
+    var expense_box2 = new Box('coco_box2', document.getElementById('zone2'), 500, 100, 'expense_box', 'expense_header', 'expense_body', 'expense_buttons');
 
     expense_box.setTitle("Balance details");
     expense_box.setBody("Food: 20,25€ 05/11/2013");
@@ -24,24 +22,14 @@ window.onload=function() {
     document.getElementById('expense_box2').addEventListener('click', animation2);
     
     function animation() {
-	if (expense_box2_activated==true) {
-		expense_box2.close();
-		expense_box2_activated=false;
-	}
-	expense_box_activated=true;
 	expense_box.open();
 	document.getElementById('zone').style.height=105+'px';;
 	expense_box.show();
     }  
 
     function animation2() {
-	if (expense_box_activated==true) {
-		expense_box.close();
-		expense_box_activated=false;
-	}
-	expense_box2_activated=true;
 	expense_box2.open();
-	document.getElementById('zone').style.height=105+'px';
+	document.getElementById('zone2').style.height=105+'px';
 	expense_box2.show();
     }
 
@@ -50,6 +38,6 @@ window.onload=function() {
     }
 
     function closure2() {
-	document.getElementById('zone').style.height=0+'px';
+	document.getElementById('zone2').style.height=0+'px';
     }
 }
