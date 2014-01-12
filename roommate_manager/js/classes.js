@@ -6,24 +6,31 @@
 function Box(id, parent, width, height, box_class='dialog_box', header_class='dialog_header', body_class='dialog_body', buttons_class='dialog_buttons') {
         
     this.open = function() {
-	if(!document.getElementById(this.element.id)) {
-	    parent.appendChild(this.element);    
+	if(!document.getElementById(this.container.id)) {
+	    parent.appendChild(this.container);    
 	}	
     }
     
     this.close = function() {
-	if(document.getElementById(this.element.id)) {
-	    parent.removeChild(this.element);
+	if(document.getElementById(this.container.id)) {
+	    parent.removeChild(this.container);
 	}
     }
 
     this.show = function() {
-	this.element.style.display = 'block';
+	if(!document.getElementById(this.element.id)) {
+	    this.container.appendChild(this.element);
+	    // this.container.style.display = 'block';
+	}
     }
 
     this.hide = function() {
-	this.element.style.display = 'none';
+	if(document.getElementById(this.element.id)) {
+	    this.container.removeChild(this.element);
+	    // this.container.style.display = 'none';
+	}
     }
+
     
     this.refresh = function() {
 	
@@ -84,6 +91,11 @@ function Box(id, parent, width, height, box_class='dialog_box', header_class='di
 	xhr.send(null);
     }
     
+    // container div useful for animations
+    this.container = document.createElement('div');
+    this.container.id = id + '_container';
+    this.container.style.height = '0px';
+
     // we create a div in the html document
     this.element = document.createElement('div');
     
@@ -99,7 +111,6 @@ function Box(id, parent, width, height, box_class='dialog_box', header_class='di
     this.body.className = body_class;
     this.buttons_section = document.createElement('section');
     this.buttons_section.className = buttons_class;
-    this.hide()
     // object containing all the buttons of the box
     // Button object
     this.buttons = {};

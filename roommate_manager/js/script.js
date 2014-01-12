@@ -2,13 +2,19 @@ window.onload=function() {
     
     /* Basic example of how to use a box, with the buttons */
     
+    /*
+   var divanim = document.createElement('div');
+    divanim.className = 'animation';
+    document.body.appendChild(divanim);
+    */
     // we create the box
-    var dialog_box = new Box('box', document.body,500, 300);
+    var dialog_box = new Box('box', document.body, 500, 300);
     // we init the box
     dialog_box.setTitle("Nice box");
     // dialog_box.setBody("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie erat vel felis viverra, in interdum eros sollicitudin.");
     // how to import external html directly in the box body
-    dialog_box.importHTML("source/table.html");
+    
+    dialog_box.importHTML("source/table.html"); 
     // we create the buttons for the box
     var but = new Button('test', 'quit');
     var but1 = new Button('test1', 'test');
@@ -20,13 +26,12 @@ window.onload=function() {
     dialog_box.addButton(but);
     dialog_box.addButton(but1);
     dialog_box.addButton(but2);
-    
     /* end of example */
 
     // ex. of how to bind an event to the onclick event of a button defined in html
     // and not in the js file
     document.getElementById('add_expense').addEventListener('click', function() { dialog_box.open(); dialog_box.show(); });
-    
+
     /*
      * Test de drag and drop sur une image
      *
