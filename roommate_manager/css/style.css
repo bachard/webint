@@ -423,3 +423,30 @@ footer {
     bottom:0px;
 }
 
+/* LOGIN STYLE */
+
+.main_title {
+    font-size:56px;
+    text-align:center;
+    color:white;
+    background-color:#992C2C;
+}
+
+.formulaire {
+    text-align:center;
+}
+
+.login_button {
+    font-size:20px;
+    display:block;
+    border: 1px solid white;
+    padding: 5px;
+    margin:auto;
+    margin-top: 25px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.login{
+    background-color:#DBDBDB;
+}
