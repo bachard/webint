@@ -7,6 +7,10 @@ body{
 
 button {
     cursor:pointer;
+    display:block;
+    border:1px solid white;
+    font-weight:bold;
+    border-radius:3px;
 }
 
 header.main_header {
@@ -216,6 +220,29 @@ aside #personal_info {
     margin-bottom:5px;
     
 }
+
+.notification_popup {
+    text-align:center;
+}
+
+.notification_popup p {
+    margin-top:10px;
+}
+
+.notification_popup td {
+    border-color:#ffffff;
+}
+
+.notification_popup thead {
+    background-color:#992C2C;
+    color:#ffffff;
+}
+
+.notification_popup table {
+    margin:auto;
+    margin-top:15px;
+}
+
 /* end of notifications */
 
 footer {
@@ -255,9 +282,7 @@ footer {
 
 .dialog_body {
     margin:5px;
-    overflow-x:auto;
-    overflow-y:scroll;
-
+    overflow:auto;
 }
 
 .dialog_buttons {
@@ -332,7 +357,8 @@ footer {
 }
 
 .detail_button {
-
+    border-radius:100%;
+    font-size:25px;
 }
 
 /* ROOMMATE BLOCK STYLE*/
