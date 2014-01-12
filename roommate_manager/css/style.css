@@ -331,10 +331,27 @@ footer {
     z-index:10;
     position:relative;
     margin:auto;
-    background-color:gray;
+    background-color:#B1B1B1;
     /*border:1px solid #992C2C;*/
-    border-radius: 3px;
+    border-radius:3px;
+    margin-bottom:10px;
+    margin-top:10px;
 }
+
+.expense_box td, th {
+    border-color:#ffffff;
+}
+
+.expense_box thead {
+    background-color:#992C2C;
+    color:#ffffff;
+}
+
+.expense_box table {
+    margin:auto;
+    margin-top:15px;
+}
+
 
 .expense_header {
     text-align:center;
@@ -351,11 +368,34 @@ footer {
 .expense_block {
     margin-left:-4px;
     display:inline-block;
-    width:250px;
+    width:240px;
+    margin-left:5px;
+    margin-right:5px;
     height: 150px;
     vertical-align:top;
-    border:2px solid black;
-    border-radius: 10px;
+    border-radius: 3px;
+    text-align: center;
+    background:#b1b1b1;
+}
+
+.expense_block h2 {
+    padding:5px; 
+}
+
+.expense_block h3 {
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.expense_block .detail_button {
+    position:relative;
+    left:210px;
+}
+
+.detail_button_cont {
+    display:block;
+    position:absolute;
+    bottom:345px;
 }
 
 .detail_button {
@@ -400,7 +440,6 @@ footer {
 }
 
 .roommate_block h2 {
-    
 }
 
 .roommate_block h3 {
@@ -434,4 +473,32 @@ footer {
 .container_profile_image .imageTick {
     position: relative;
     bottom: 129px;
+}
+
+/* LOGIN STYLE */
+
+.main_title {
+    font-size:56px;
+    text-align:center;
+    color:white;
+    background-color:#992C2C;
+}
+
+.formulaire {
+    text-align:center;
+}
+
+.login_button {
+    font-size:20px;
+    display:block;
+    border: 1px solid white;
+    padding: 5px;
+    margin:auto;
+    margin-top: 25px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.login{
+    background-color:#DBDBDB;
 }
