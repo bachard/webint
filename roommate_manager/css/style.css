@@ -311,11 +311,32 @@ footer {
 .expense_block {
     margin-left:10px;
     display:inline-block;
+    width:250px;
+    height: 150px;
+    vertical-align:top;
+    border:2px solid black;
+    border-radius: 10px;
+}
+
+.detail_button {
+
+}
+
+/* ROOMMATE BLOCK STYLE*/
+
+.roommate_block {
+    margin-left:10px;
+    display:inline-block;
     width:170px;
     height: 250px;
     vertical-align:top;
     border:2px solid black;
     border-radius: 3px;
+}
+
+.roommate_block img {
+    display: block;
+    margin: auto;
 }
 
 .detail_button {
