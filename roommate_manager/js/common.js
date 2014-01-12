@@ -37,6 +37,19 @@ function initialize() {
   
     document.getElementById('personal_info').addEventListener('click', function() { dialog_box2.open(); dialog_box2.show(); });
 
+    var notifications_box = new Box('notifications_box', document.body, 500,300);
+    
+    dialog_box.setTitle("Notifications");
+    dialog_box.importHTML("source/table.html");
+
+    var notifications = document.getElementsByClassName('notification');
+   
+    for(var i = 0; i < notifications.length; i++) {
+	console.log(notifications[i]);
+	notifications[i].addEventListener('click', function() {
+	    alert(this.getAttribute('data-id'));
+	});
+    }
 }
 
 
