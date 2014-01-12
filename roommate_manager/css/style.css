@@ -115,6 +115,10 @@ th {
     border: 1px solid black;
     padding: 5px 5px 5px 5px;
 }
+caption{
+    font-size: 20px;
+    font-weight: bold;
+}
 
 /*******************************/
 /*  ASIDE                      */
