@@ -8,7 +8,7 @@ Gui	design boxes balance
 Geo	design boxes roomates
 Bast	switch notif a une autre avec fleche
 Rémi	compléter source/addexpense.html
-	rendre cliquable petite images roommates avec coche vert
+Geo	rendre cliquable petite images roommates avec coche vert
 Gui OK	fix animation
 	html toute la page synthesis
 	interaction choix du tresorier
