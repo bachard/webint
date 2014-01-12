@@ -32,6 +32,25 @@ window.onload=function() {
     // and not in the js file
     //document.getElementById('add_expense').addEventListener('click', function() { dialog_box.open(); dialog_box.show(); });
 
+/*Add an dialog Box to Edit Profile*/
+     var dialog_box2 = new Box('box', document.body,500, 300);
+    
+    dialog_box2.setTitle("Edit Your Profile");
+    dialog_box2.importHTML("source/profile.html");
+    
+    var button = new Button('test', 'quit');
+    var button1 = new Button('test1', 'ok');
+
+    
+    button.onclick(function() { dialog_box2.hide() });
+    button1.onclick(function() { alert(' ') });
+    dialog_box2.addButton(button);
+    dialog_box2.addButton(button1);
+   
+  
+    document.getElementById('personal_info').addEventListener('click', function() { dialog_box2.open(); dialog_box2.show(); });document.getElementById('personal_info').addEventListener('click', function() { dialog_box.open(); dialog_box.show(); });
+
+
     /*
      * Test de drag and drop sur une image
      *

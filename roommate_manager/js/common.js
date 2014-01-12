@@ -5,7 +5,7 @@ function initialize() {
     var dialog_box = new Box('box', document.body,500, 300);
     
     dialog_box.setTitle("Add An Expense");
-    dialog_box.importHTML("source/table.html");
+    dialog_box.importHTML("source/addExpense.html");
     
     var but = new Button('test', 'quit');
     var but1 = new Button('test1', 'test');
