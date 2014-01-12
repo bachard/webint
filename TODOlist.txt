@@ -14,7 +14,8 @@ Gui	fix animation ?
 	interaction choix du tresorier
 	html toute la page history
 	revoir l'accès edit profile
-	edit budget in profile
+	edit budget in edit profile
+	dans edit profile, possibilité de charger une nouvelle photo en drag&drop
 	police et couleur onglets
 Bast	rendre dynamique le nombre de notifs
 	design bulle nombre notifs
