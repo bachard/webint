@@ -161,8 +161,12 @@ aside #personal_info {
     bottom: 112%;
     text-align: center;
     font-size: 20px;
-    line-height: 140%;
     font-weight: bold;
+}
+
+#nNotifs span {
+    position: relative;
+    top: 5px;
 }
 
 .aside_button {
@@ -332,6 +336,18 @@ footer {
 }
 
 .detail_button {
+    display: block;
+    height: 25px;
+    width: 25px;
+    border-radius:50%;
+    border: 1px solid white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.detail_button span {
+   position: relative;
+   bottom: 3px;
 
 }
 
@@ -346,6 +362,7 @@ footer {
     border-radius: 3px;
     background-color: #B1B1B1;
     text-align: center;
+    padding-top: 10px;
 }
 
 .roommate_block img {
