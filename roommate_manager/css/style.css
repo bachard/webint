@@ -365,8 +365,20 @@ footer {
 .roommate_block img {
     display: block;
     margin: auto;
+    margin-top: 5px;
+}
+
+.roommate_block .detail_button {
+    position: relative;
+    left: 134px;
+    bottom: 12px;
 }
 
 .roommate_block h2 {
     
+}
+
+.roommate_block h3 {
+    font-size: 30px;
+    margin-top: 15px;
 }
