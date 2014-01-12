@@ -109,6 +109,9 @@ function Box(id, parent, width, height, box_class='dialog_box', header_class='di
     this.title.className = header_class;
     this.body = document.createElement('section');
     this.body.className = body_class;
+    // for the body to fit in the box
+    this.body.style.width = (width-5) + 'px'
+    this.body.style.height = (height-67) + 'px'
     this.buttons_section = document.createElement('section');
     this.buttons_section.className = buttons_class;
     // object containing all the buttons of the box

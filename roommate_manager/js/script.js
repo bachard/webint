@@ -50,6 +50,7 @@ window.onload=function() {
   
     document.getElementById('personal_info').addEventListener('click', function() { dialog_box2.open(); dialog_box2.show(); });document.getElementById('personal_info').addEventListener('click', function() { dialog_box.open(); dialog_box.show(); });
 
+
     /*
      * Test de drag and drop sur une image
      *
