@@ -8,14 +8,12 @@ function initialize() {
     add_expense_box.importHTML("source/add_expense.html");
     
     var add_expense_box_quit = new Button('quit', 'quit');
-    var add_expense_box_test1 = new Button('test1', 'test');
-    var add_expense_box_test2 = new Button('test2', 'test');
+    var add_expense_box_validate = new Button('validate', 'ok');
     
     add_expense_box_quit.onclick(function() { add_expense_box.close() });
-    add_expense_box_test1.onclick(function() { alert(' ') });
+    add_expense_box_validate.onclick(function() { add_expense_box.close() });
     add_expense_box.addButton(add_expense_box_quit);
-    add_expense_box.addButton(add_expense_box_test1);
-    add_expense_box.addButton(add_expense_box_test2);
+    add_expense_box.addButton(add_expense_box_validate);    
   
     document.getElementById('add_expense').addEventListener('click', function() { 
 	console.log('add_expense');
@@ -37,7 +35,7 @@ function initialize() {
 
     
     profile_box_quit.onclick(function() { profile_box.close() });
-    profile_box_validate.onclick(function() { alert(' ') });
+    profile_box_validate.onclick(function() { profile_box.close() });
     profile_box.addButton(profile_box_quit);
     profile_box.addButton(profile_box_validate);
    
@@ -47,6 +45,9 @@ function initialize() {
 	profile_box.open();
 	profile_box.show();
     });
+
+
+    /*Notifications Box*/
 
     var notifications_box = new Box('notifications_box', document.body, 500,300);
 
