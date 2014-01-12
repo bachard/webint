@@ -19,19 +19,19 @@
 	<section id="notifications" class="notifications">
 	  <ul>
 	    <li>
-	      <div class="notification" data-id="1" data-title="Notification 1">
+	      <div class="notification" data-id="1" data-title="Notification 1" onmouseover="this.style.cursor='pointer'">
 		<header>Notification 1</header>
 		<section>Bla bla bla, prout prout</section>
 	      </div>
 	    </li>
 	    <li>
-	      <div class="notification" data-id="2" data-title="Notification 2">
+	      <div class="notification" data-id="2" data-title="Notification 2" onmouseover="this.style.cursor='pointer'">
 		<header>Notification 2</header>
 		<section>Bla bla bla, prout prout</section>
 	      </div>
 	    </li>
 	    <li>
-	      <div class="notification" data-id="3" data-title="Notification 3">
+	      <div class="notification" data-id="3" data-title="Notification 3" onmouseover="this.style.cursor='pointer'">
 		<header>Notification 3</header>
 		<section>Bla bla bla, prout prout</section>
 	      </div>
@@ -55,6 +55,7 @@
 	      <!-- First Block -->
 	      <div class="expense_block">
 		<h2>Balance</h2>
+		<br />
 		+36€
 		<br />
 		<button id="expense_box" class="detail_button">+</button>
@@ -62,9 +63,16 @@
 	      <!-- Second Block -->
 	      <div class="expense_block">
 		<h2>Personal Expenses</h2>
+		<br />
 		126€
 		<br />
 		<button id="expense_box2" class="detail_button">+</button>
+	      </div>
+		<!-- Third Block -->
+		<div class="expense_block">
+		<h2>Budget Left</h2>
+		+35€
+		<br />
 	      </div>
 	      <!-- Beginning of the first animation zone -->
 	      <div id="zone" class="animation">
