@@ -6,19 +6,20 @@
     <title>Roomate Manager</title> 
     <link rel="stylesheet" href="css/style.css" type="text/css" />
   </head>
+
   <body>
     <header class="main_header">
       <h1>Roomate Manager</h1>
     </header>
+
     <aside>
       <div id="personal_info" class="test">
 	<img src="img/profile_img.jpeg" alt="Profile image" id="personal_img" draggable="true"/>
 	<div id="nNotifs">4</div>
       </div>
-      
       <button id="add_expense" class="aside_button">Add an expense</button>
-      
-    </aside> 
+    </aside>
+
     <section class="main">
       <nav>
 	<ul>
@@ -30,19 +31,34 @@
 	  
 	</ul>
       </nav>
-      <section>
+      <section class="submain">
 	<article>
-	  <header>
-	    <h1>roommates page: TODO</h1>
-	  </header>
 	  <section>
-	    <h2>Lorem ipsum</h2>
-	    <p>
-	      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-	      Phasellus molestie erat vel felis viverra, in interdum eros sollicitudin.
-	      Aliquam erat volutpat. Curabitur tristique leo vitae dolor aliquet bibendum.
-	      In ornare, magna convallis rutrum hendrerit, odio ipsum ullamcorper sapien, a facilisis sed. 
-	    </p>
+	       <div class="expense_block">
+	      <h2>Bastien</h2>
+		+36€
+		<br />
+		<button id="expense_box" class="detail_button">+</button>
+	    </div>
+		<!-- Second Block -->
+	<div class="expense_block">
+		<h2>Geoffrey</h2>
+		126€
+		<br />
+		<button id="expense_box2" class="detail_button">+</button>
+	</div>
+	<div class="expense_block">
+		<h2>Guillaume</h2>
+		126€
+		<br />
+		<button id="expense_box2" class="detail_button">+</button>
+	</div>
+	<div class="expense_block">
+		<h2>Remi</h2>
+		126€
+		<br />
+		<button id="expense_box2" class="detail_button">+</button>
+	</div>
 	  </section>
 	  <section>
 	    <h2>Comments</h2>
@@ -63,6 +79,7 @@
       </footer>
     </section>
     <script type="text/javascript" src="js/classes.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
     <script type="text/javascript" src="js/roomates.js"></script>
   </body>
 </html>
