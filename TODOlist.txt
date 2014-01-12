@@ -9,7 +9,7 @@ Geo	design boxes roomates
 Bast	switch notif a une autre avec fleche
 Rémi	compléter source/addexpense.html
 	rendre cliquable petite images roommates avec coche vert
-Gui	fix animation ?
+Gui OK	fix animation
 	html toute la page synthesis
 	interaction choix du tresorier
 	html toute la page history
