@@ -151,43 +151,47 @@ footer {
 /* EXPENSE BOX STYLE */
 
 .animation2 {
-	height:0px:
+    height:0px:
 }
 
 .animation {
-	height:0px;
-	transition: height 1s; -moz-transition: height 1s;-webkit-transition: height 1s;-o-transition: height 1s; overflow: hidden;
+    height:0px;
+    transition: height 1s; 
+    -moz-transition: height 1s;
+    -webkit-transition: height 1s;
+    -o-transition: height 1s;
+    overflow: hidden;
 }
 
 .expense_box {
-	z-index:10;
-    	position:relative;
-    	margin:auto;
-    	background-color:gray;
-    	border:1px solid #992C2C;
+    z-index:10;
+    position:relative;
+    margin:auto;
+    background-color:gray;
+    border:1px solid #992C2C;
 }
 
 .expense_header {
-	text-align:center;
+    text-align:center;
 }
 
 .expense_buttons {
-	position: absolute;
-	right: 0px;
-	bottom: 0px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
 }
 
 /* EXPENSE BLOCK STYLE */
 
 .expense_block {
-	margin-left:25%;
-	display:inline-block;
-	width:300px;
-	vertical-align:bottom;
-	border:2px solid black;
-	border-radius: 10px;
+    margin-left:25%;
+    display:inline-block;
+    width:300px;
+    vertical-align:bottom;
+    border:2px solid black;
+    border-radius: 10px;
 }
 
 .detail_button {
-	
+    
 }
