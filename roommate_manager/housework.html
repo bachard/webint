@@ -9,33 +9,33 @@
     <section class="main_wrapper">
       <aside>
 	<div id="personal_info" class="test">
-	  <img src="img/profile_img_125.jpeg" alt="Profile image">
+	  <img src="img/profile_img_125.jpeg" alt="Profile image" id="personal_img" draggable="true"/>
+	  <div id="nNotifs">3</div>
 	</div>
-	<button onclick="box()">Test</button>
+	<button id="add_expense" class="aside_button">Add an expense</button>
 	<section id="notifications" class="notifications">
 	  <ul>
 	    <li>
-	      <div class="notification" data-id="1" data-title="Notification 1">
-		<header>Notification 1</header>
-		<section>Bla bla bla, prout prout</section>
+	      <div class="notification" data-id="1" data-title="Rémi - 10/01/2014">
+		<header>10/01/2014</header>
+		<section>Rémi added an expense for common</section>
 	      </div>
 	    </li>
 	    <li>
-	      <div class="notification" data-id="2" data-title="Notification 2">
-		<header>Notification 2</header>
-		<section>Bla bla bla, prout prout</section>
+	      <div class="notification" data-id="2" data-title="Geoffray - 08/01/2014">
+		<header>08/01/2014</header>
+		<section>Geoffray added an expense for me</section>
 	      </div>
 	    </li>
 	    <li>
-	      <div class="notification" data-id="3" data-title="Notification 3">
-		<header>Notification 3</header>
-		<section>Bla bla bla, prout prout</section>
+	      <div class="notification" data-id="3" data-title="Guillaume - 18/12/2013">
+		<header>18/12/2013</header>
+		<section>Guillaume cleaned the living room</section>
 	      </div>
 	    </li>
 	  </ul>
-	</section>
-      </aside>
-      
+	</section>	
+      </aside> 
       <section class="main">
 	<header class="main_header">
 	  <h1>Roommate Manager</h1>

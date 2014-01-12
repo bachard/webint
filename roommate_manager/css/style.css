@@ -7,6 +7,10 @@ body{
 
 button {
     cursor:pointer;
+    display:block;
+    border:1px solid white;
+    font-weight:bold;
+    border-radius:3px;
 }
 
 header.main_header {
@@ -220,6 +224,29 @@ aside #personal_info {
     margin-bottom:5px;
     
 }
+
+.notification_popup {
+    text-align:center;
+}
+
+.notification_popup p {
+    margin-top:10px;
+}
+
+.notification_popup td {
+    border-color:#ffffff;
+}
+
+.notification_popup thead {
+    background-color:#992C2C;
+    color:#ffffff;
+}
+
+.notification_popup table {
+    margin:auto;
+    margin-top:15px;
+}
+
 /* end of notifications */
 
 footer {
@@ -261,7 +288,6 @@ footer {
     margin:5px;
     overflow-x:auto;
     overflow-y:scroll;
-
 }
 
 .dialog_buttons {
@@ -345,7 +371,6 @@ footer {
 .detail_button span {
    position: relative;
    bottom: 3px;
-
 }
 
 /* ROOMMATE BLOCK STYLE*/
@@ -381,4 +406,18 @@ footer {
 .roommate_block h3 {
     font-size: 30px;
     margin-top: 15px;
+}
+
+/* HISTORY BLOCK STYLE */
+
+.history_block {
+    position:relative;
+    border: 2px solid black;
+    margin-bottom:10px;
+}
+
+.history_button {
+    position:absolute;
+    right:0px;
+    bottom:0px;
 }
