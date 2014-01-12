@@ -14,11 +14,6 @@ window.onload=function() {
     // dialog_box.setBody("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie erat vel felis viverra, in interdum eros sollicitudin.");
     // how to import external html directly in the box body
     
-    ven. janv. 10 22:44:55 CET 2014
-
-    555555555555555555555555555555555555555555555555550
-
-    
     dialog_box.importHTML("source/table.html"); 
     // we create the buttons for the box
     var but = new Button('test', 'quit');
@@ -35,8 +30,8 @@ window.onload=function() {
 
     // ex. of how to bind an event to the onclick event of a button defined in html
     // and not in the js file
-    document.getElementById('show_box').addEventListener('click', function() { dialog_box.slide(); });
-    
+    document.getElementById('add_expense').addEventListener('click', function() { dialog_box.open(); dialog_box.show(); });
+
     /*
      * Test de drag and drop sur une image
      *

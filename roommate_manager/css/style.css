@@ -15,8 +15,9 @@ header.main_header {
 
 nav {
     margin-top:10px;
-    padding-bottom:5px;
+    /* padding-bottom:5px; */
     text-align:center;
+    margin-bottom:-5px;
 }
 
 nav a {
@@ -29,22 +30,30 @@ nav a:hover {
 
 nav ul {
     list-style:none;
-    border-bottom: 3px solid black;
+    /* border-bottom: 3px solid black; */
     color:black;
     font-size: 25px;
 }
 
 nav ul li {
     display:inline-block;
-    height: 40px;
-    width : 215px;
-    background: url('../img/onglet.png') no-repeat;
-    margin-bottom: -3px;
-    padding-top: 15px;
+    height: 50px;
+    width : 200px;
+    background: url('../img/onglet_unselected.png') no-repeat;
+    /* margin-bottom: -3px; */
+    /* padding-top: 15px; */
+    margin-left:-5px;
 }
 
 nav ul li.active {
-    border-bottom: 3px solid white;
+    /* border-bottom: 3px solid #DBDBDB; */
+    background: url('../img/onglet_selected.png') no-repeat;
+}
+
+nav ul li a {
+    color:#000000;
+    display:block;
+    padding-top: 10px;
 }
 
 article header {
@@ -61,20 +70,44 @@ section.main {
     display: inline-block;
     vertical-align: top;
     width:85%;
+    min-width:1100px;
+    /* max-width:1100px; */
 }
 
-section.main section {
+section.submain {
     padding-top: 20px;
+    border:5px solid #992C2C;
+    background-color: #dbdbdb;
+    /* margin-top: -5px; */
 }
 
-td /* Toutes les cellules des tableaux... */
-{
-    border: 1px solid black; /* auront une bordure de 1px */
+/*******************************/
+/*  TABLE                      */
+/*******************************/
+
+table {
+    border-collapse: collapse;
 }
-th /* Toutes les cellules des tableaux... */
-{
-    border: 1px solid black; /* auront une bordure de 1px */
+
+tr {
+    height:30px;
 }
+
+
+td {
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
+}
+
+
+th {
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
+}
+
+/*******************************/
+/*  ASIDE                      */
+/*******************************/
 
 aside {
     display: inline-block;
@@ -90,6 +123,70 @@ aside #personal_info {
     margin:auto;
     border:2px solid #FFFFFF;
 }
+
+#nNotifs {
+    background-color: #DBDBDB;
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 30%;
+    width: 30%;
+    position: relative;
+    left: 84%;
+    bottom: 122%;
+    text-align: center;
+    font-size: 22px;
+    line-height: 140%;
+    font-weight: bold;
+}
+
+.aside_button {
+    display:block;
+    border: 1px solid white;
+    padding: 5px;
+    margin:auto;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+/* Notifications section */
+
+.notifications {
+    width:200px;
+    background:#ffffff;
+    margin:auto;
+    margin-top:50px;
+    padding:5px;
+}
+
+.notifications ul {
+    list-style:none;
+}
+
+.notification {
+    margin:5px;
+    margin-top:10px;
+    border:1px solid #000000;
+}
+
+.notification:hover {
+    background-color:#dddddd;
+}
+
+.notification header {
+    font-weight: bold;
+    border-bottom:1px solid black;
+    margin:auto;
+    width:80%;
+    text-align:center;
+    padding:5px;
+}
+
+.notification section {
+    margin:5px;
+    margin-bottom:5px;
+    
+}
+/* end of notifications */
 
 footer {
     text-align:center;

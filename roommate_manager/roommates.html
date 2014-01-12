@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,16 +7,27 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" />
   </head>
   <body>
+    <header class="main_header">
+      <h1>Roomate Manager</h1>
+    </header>
+    <aside>
+      <div id="personal_info" class="test">
+	<img src="img/profile_img.jpeg" alt="Profile image" id="personal_img" draggable="true"/>
+	<div id="nNotifs">4</div>
+      </div>
+      
+      <button id="add_expense" class="aside_button">Add an expense</button>
+      
+    </aside> 
     <section class="main">
-      <header class="main_header">
-	<h1>Roomate Manager</h1>
-      </header>
       <nav>
 	<ul>
-	  <li><a href="index.html">news</a></li>
-	  <li><a href="index.html">budget</a></li>
-	  <li><a href="index.html">history</a></li>
-	  <li><a href="index.html">profile</a></li>
+	  <li><a href="index.html">Index</a></li>
+	  <li><a href="expenses.html">my expenses</a></li>
+	  <li class="active"><a href="roomates.html">roomates</a></li>
+	  <li><a href="synthesis.html">synthesis</a></li>
+	  <li><a href="history.html">history</a></li>
+	  
 	</ul>
       </nav>
       <section>
@@ -50,12 +62,7 @@
 	</p>
       </footer>
     </section>
-    <aside>
-      <div id="personal_info" class="test">
-	<img src="img/profile_img.jpeg" alt="Profile image">
-      </div>
-      <button onclick="box()">Test</button>
-    </aside>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/classes.js"></script>
+    <script type="text/javascript" src="js/roomates.js"></script>
   </body>
 </html>
