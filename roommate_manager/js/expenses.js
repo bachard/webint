@@ -24,13 +24,13 @@ window.onload=function() {
     
     function animation() {
 	expense_box.open();
-	document.getElementById('zone').style.height=105+'px';;
+	document.getElementById('zone').style.height=120+'px';;
 	expense_box.show();
     }  
 
     function animation2() {
 	expense_box2.open();
-	document.getElementById('zone2').style.height=255+'px';
+	document.getElementById('zone2').style.height=280+'px';
 	expense_box2.show();
     }
 
