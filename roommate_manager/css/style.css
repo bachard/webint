@@ -5,6 +5,10 @@ body{
     margin:auto;
 }
 
+button {
+    cursor:pointer;
+}
+
 header.main_header {
     top:0;
     height:40px;
@@ -12,6 +16,7 @@ header.main_header {
     background-color:#992C2C;
     color:white;
     font-weight:bold;
+    box-shadow: 2px 4px 3px rgba(236, 236, 236, 0.9);
 }
 
 nav {
@@ -132,6 +137,7 @@ aside {
     background-color:#992C2C;
     margin-top:60px;
     border-radius: 3px;
+    box-shadow: 2px 4px 3px rgba(236, 236, 236, 0.9);
 }
 
 aside #personal_info {
@@ -141,6 +147,7 @@ aside #personal_info {
     border:2px solid #FFFFFF;
     border-radius: 3px;
     margin-top:-40px;
+    cursor:pointer;
 }
 
 #nNotifs {
@@ -185,9 +192,10 @@ aside #personal_info {
 .notification {
     margin:5px;
     margin-top:10px;
-    border:1px solid #000000;
+    border:1px solid #ffffff;
     background-color: #dbdbdb;
     border-radius: 3px;
+    cursor:pointer;
 }
 
 .notification:hover {
@@ -268,8 +276,9 @@ footer {
     display:inline-block;
     border: 1px solid white;
     font-weight: bold;
-    margin-left:10px;
+    margin-right:10px;
     margin-top:2px;
+    float:right;
 /*
   border-radius:0px;
   background-color:#ffffff;
