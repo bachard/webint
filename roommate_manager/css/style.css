@@ -331,9 +331,10 @@ footer {
     z-index:10;
     position:relative;
     margin:auto;
-    background-color:gray;
+    background-color:#B1B1B1;
     /*border:1px solid #992C2C;*/
     border-radius: 3px;
+    margin-bottom:10px;
 }
 
 .expense_header {
