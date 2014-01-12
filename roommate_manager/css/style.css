@@ -318,6 +318,23 @@ footer {
     border-radius: 3px;
 }
 
+/* ROOMMATE BLOCK STYLE*/
+
+.roommate_block {
+    margin-left:10px;
+    display:inline-block;
+    width:170px;
+    height: 250px;
+    vertical-align:top;
+    border:2px solid black;
+    border-radius: 3px;
+}
+
+.roommate_block img {
+    display: block;
+    margin: auto;
+}
+
 .detail_button {
     
 }
