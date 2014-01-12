@@ -2,12 +2,13 @@ window.onload=function() {
     initialize();
     /*Dialog Box Specific*/
     var expense_box = new Box('coco_box', document.getElementById('zone'), 500, 100, 'expense_box', 'expense_header', 'expense_body', 'expense_buttons');
-    var expense_box2 = new Box('coco_box2', document.getElementById('zone2'), 500, 100, 'expense_box', 'expense_header', 'expense_body', 'expense_buttons');
+    var expense_box2 = new Box('coco_box2', document.getElementById('zone2'), 500, 250, 'expense_box', 'expense_header', 'expense_body', 'expense_buttons');
 
     expense_box.setTitle("Balance details");
-    expense_box.setBody("Food: 20,25€ 05/11/2013");
+    expense_box.importHTML("source/balance.html");
+
     expense_box2.setTitle("Personal Expenses details");
-    expense_box2.setBody("Barre de fer: 120€ 05/11/2013");
+    expense_box2.importHTML("source/list_expenses.html");
 
     var but = new Button('test', '-');
     var but2 = new Button('test', '-');
@@ -29,7 +30,7 @@ window.onload=function() {
 
     function animation2() {
 	expense_box2.open();
-	document.getElementById('zone2').style.height=105+'px';
+	document.getElementById('zone2').style.height=255+'px';
 	expense_box2.show();
     }
 
