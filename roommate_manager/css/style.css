@@ -67,6 +67,11 @@ article section{
 
 }
 
+section.main_wrapper {
+    margin:auto;
+    width:1400px;
+}
+
 section.main {
     display: inline-block;
     vertical-align: top;
