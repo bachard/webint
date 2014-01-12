@@ -309,10 +309,11 @@ footer {
 /* EXPENSE BLOCK STYLE */
 
 .expense_block {
-    margin-left:25%;
+    margin-left:10px;
     display:inline-block;
-    width:300px;
-    vertical-align:bottom;
+    width:170px;
+    height: 250px;
+    vertical-align:top;
     border:2px solid black;
-    border-radius: 10px;
+    border-radius: 3px;
 }
