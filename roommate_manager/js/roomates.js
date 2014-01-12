@@ -16,5 +16,6 @@ window.onload=function() {
     dialog_box.addButton(but);
     dialog_box.addButton(but1);
     dialog_box.addButton(but2);
-  
+    
     document.getElementById('add_expense').addEventListener('click', function() { dialog_box.open(); dialog_box.show(); });
+}
