@@ -1,0 +1,24 @@
+TODO :
+
+Name OK	TaskToDo  (example for editing)
+
+Geo 	login page
+Bast	chacun ajouter une photo : 125px
+Gui	design boxes balance
+Geo	design boxes roomates
+Bast	switch notif a une autre avec fleche
+Rémi	compléter source/addexpense.html
+	rendre cliquable petite images roommates avec coche vert
+Gui	fix animation ?
+	html toute la page synthesis
+	interaction choix du tresorier
+	html toute la page history
+	revoir l'accès edit profile
+	edit budget in profile
+	police et couleur onglets
+Bast	rendre dynamique le nombre de notifs
+	design bulle nombre notifs
+	style curseur lorsque cliquable
+Rémi	remplir déroulanr détails des roommates avec les dépenses entre soi et ce roommate
+	remplir déroulant liste of expenses avec ses propres expenses (comme notre nglet perso)
+	video sur page login
