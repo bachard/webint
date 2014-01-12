@@ -2,7 +2,7 @@ function initialize() {
     
     /* Add an Expense DialogBox*/
     
-    var add_expense_box = new Box('box', document.body,500, 300);
+    var add_expense_box = new Box('add_expense_box', document.body,500, 300);
     
     add_expense_box.setTitle("Add An Expense");
     add_expense_box.importHTML("source/add_expense.html");
@@ -27,7 +27,7 @@ function initialize() {
 
     /*Add an dialog Box to Edit Profile*/
     
-    var profile_box = new Box('box', document.body,500, 300);
+    var profile_box = new Box('profile_box', document.body,500, 300);
     
     profile_box.setTitle("Edit Your Profile");
     profile_box.importHTML("source/profile.html");
