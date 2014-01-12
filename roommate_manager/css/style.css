@@ -422,3 +422,16 @@ footer {
     bottom:0px;
 }
 
+/* STYLE FOR TICK IMAGE */
+
+.container_profile_image {
+    display: inline-block;
+    vertical-align: top;
+    width: 125px;
+    height: 125px;
+ }
+
+.container_profile_image .imageTick {
+    position: relative;
+    bottom: 129px;
+}

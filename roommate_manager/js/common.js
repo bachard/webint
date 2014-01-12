@@ -104,4 +104,17 @@ function initialize() {
 }
 
 
+function tickImage(div){
+    if (div.getElementsByClassName('imageTick').length==0){
+        var childImage = document.createElement('img');
+        childImage.className = 'imageTick';
+        childImage.src ='img/profile_remi.jpg';
+        div.appendChild(childImage);}
+    else {
+	childs=div.getElementsByClassName('imageTick');
+	for (var i=0;i<childs.length;i++){
+	    div.removeChild(childs[i]);
+	}
+    }
 
+}
