@@ -7,6 +7,10 @@ body{
 
 button {
     cursor:pointer;
+    display:block;
+    border:1px solid white;
+    font-weight:bold;
+    border-radius:3px;
 }
 
 header.main_header {
@@ -165,6 +169,11 @@ aside #personal_info {
     font-weight: bold;
 }
 
+#nNotifs span {
+    position: relative;
+    top: 5px;
+}
+
 .aside_button {
     display:block;
     border: 1px solid white;
@@ -216,6 +225,29 @@ aside #personal_info {
     margin-bottom:5px;
     
 }
+
+.notification_popup {
+    text-align:center;
+}
+
+.notification_popup p {
+    margin-top:10px;
+}
+
+.notification_popup td {
+    border-color:#ffffff;
+}
+
+.notification_popup thead {
+    background-color:#992C2C;
+    color:#ffffff;
+}
+
+.notification_popup table {
+    margin:auto;
+    margin-top:15px;
+}
+
 /* end of notifications */
 
 footer {
@@ -257,7 +289,6 @@ footer {
     margin:5px;
     overflow-x:auto;
     overflow-y:scroll;
-
 }
 
 .dialog_buttons {
@@ -329,7 +360,18 @@ footer {
 }
 
 .detail_button {
+    display: block;
+    height: 25px;
+    width: 25px;
+    border-radius:50%;
+    border: 1px solid white;
+    font-weight: bold;
+    font-size: 20px;
+}
 
+.detail_button span {
+   position: relative;
+   bottom: 3px;
 }
 
 /* ROOMMATE BLOCK STYLE*/
@@ -343,6 +385,7 @@ footer {
     border-radius: 3px;
     background-color: #B1B1B1;
     text-align: center;
+    padding-top: 10px;
 }
 
 .roommate_block img {

@@ -16,7 +16,6 @@ function initialize() {
     add_expense_box.addButton(add_expense_box_validate);    
   
     document.getElementById('add_expense').addEventListener('click', function() { 
-	console.log('add_expense');
 	add_expense_box.open();
 	add_expense_box.show();
     });
@@ -39,7 +38,6 @@ function initialize() {
    
   
     document.getElementById('personal_info').addEventListener('click', function() { 
-	console.log('profile');
 	profile_box.open();
 	profile_box.show();
     });
@@ -49,7 +47,7 @@ function initialize() {
 
     var notifications = document.getElementsByClassName('notification');
     
-    var notifications_box = new Box('notifications_box', document.body, 500,300);
+    var notifications_box = new Box('notifications_box', document.body, 350, 200);
 
     var but_notifications_quit = new Button('notifications_quit', 'quit');
     var but_notifications_prev = new Button('notifications_prev', 'prev');
@@ -63,7 +61,12 @@ function initialize() {
 		// we take the modulo to do a circular review
 		// by clicking we access the function used to load the content
 		// trick to not rewrite the same code
-		notifications[(j-1)%notifications.length].click();
+		if(j!=0) {
+		    notifications[(j-1)%notifications.length].click();
+		}
+		else { 
+		    notifications[notifications.length-1].click();
+		}
 		return false;
 	    }
 	}
