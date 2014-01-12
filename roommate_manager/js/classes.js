@@ -6,29 +6,23 @@
 function Box(id, parent, width, height, box_class='dialog_box', header_class='dialog_header', body_class='dialog_body', buttons_class='dialog_buttons') {
         
     this.open = function() {
-	if(!document.getElementById(this.container.id)) {
-	    parent.appendChild(this.container);    
+	if(!document.getElementById(this.element.id)) {
+	    parent.appendChild(this.element);    
 	}	
     }
     
     this.close = function() {
-	if(document.getElementById(this.container.id)) {
-	    parent.removeChild(this.container);
+	if(document.getElementById(this.element.id)) {
+	    parent.removeChild(this.element);
 	}
     }
 
     this.show = function() {
-	if(!document.getElementById(this.element.id)) {
-	    this.container.appendChild(this.element);
-	    // this.container.style.display = 'block';
-	}
+	this.element.style.display = 'block';
     }
 
     this.hide = function() {
-	if(document.getElementById(this.element.id)) {
-	    this.container.removeChild(this.element);
-	    // this.container.style.display = 'none';
-	}
+	this.element.style.display = 'none';
     }
 
     
@@ -55,12 +49,12 @@ function Box(id, parent, width, height, box_class='dialog_box', header_class='di
     }
 
     this.setTitle = function(title) {
-	this.title.innerHTML = title;//'<header class="dialog_header">'+title+'</header>';
+	this.title.innerHTML = title;
 	this.refresh();
     }
     
     this.setBody = function(body) {
-	this.body.innerHTML = body;//'<section class="dialog_body">'+body+'</section>';
+	this.body.innerHTML = body;
 	this.refresh();
     }
     
@@ -91,11 +85,6 @@ function Box(id, parent, width, height, box_class='dialog_box', header_class='di
 	xhr.send(null);
     }
     
-    // container div useful for animations
-    this.container = document.createElement('div');
-    this.container.id = id + '_container';
-    this.container.style.height = '0px';
-
     // we create a div in the html document
     this.element = document.createElement('div');
     
@@ -105,6 +94,7 @@ function Box(id, parent, width, height, box_class='dialog_box', header_class='di
     //this.element.width = width + 'px';
     //this.element.height = height + 'px';
     this.element.className = box_class;
+    this.hide();
     this.title = document.createElement('header');
     this.title.className = header_class;
     this.body = document.createElement('section');

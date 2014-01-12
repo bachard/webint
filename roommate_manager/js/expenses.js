@@ -29,7 +29,6 @@ window.onload=function() {
 		expense_box2_activated=false;
 	}
 	expense_box_activated=true;
-	console.log('anim');
 	expense_box.open();
 	document.getElementById('zone').style.height=105+'px';;
 	expense_box.show();
@@ -41,7 +40,6 @@ window.onload=function() {
 		expense_box_activated=false;
 	}
 	expense_box2_activated=true;
-	console.log('anim');
 	expense_box2.open();
 	document.getElementById('zone').style.height=105+'px';
 	expense_box2.show();
