@@ -106,6 +106,7 @@ function Box(id, parent, width, height, box_class='dialog_box', header_class='di
     this.buttons_section.className = buttons_class;
     // object containing all the buttons of the box
     // Button object
+    // ADD THE BUTTON IN THE REVERSE ORDER (float:right used in css)
     this.buttons = {};
 }
 

@@ -8,7 +8,7 @@ Gui	design boxes balance
 Geo	design boxes roomates
 Bast	switch notif a une autre avec fleche
 Rémi	compléter source/addexpense.html
-	rendre cliquable petite images roommates avec coche vert
+Geo	rendre cliquable petite images roommates avec coche vert
 Gui OK	fix animation
 	html toute la page synthesis
 	interaction choix du tresorier
@@ -19,7 +19,7 @@ Gui OK	fix animation
 	police et couleur onglets
 Bast	rendre dynamique le nombre de notifs
 	design bulle nombre notifs
-Gui	style curseur lorsque cliquable
+Gui OK	style curseur lorsque cliquable
 Rémi	remplir déroulanr détails des roommates avec les dépenses entre soi et ce roommate
 	remplir déroulant liste of expenses avec ses propres expenses (comme notre nglet perso)
 	video sur page login

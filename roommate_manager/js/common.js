@@ -21,8 +21,6 @@ function initialize() {
 	add_expense_box.show();
     });
 
-    
-
     /*Add an dialog Box to Edit Profile*/
     
     var profile_box = new Box('profile_box', document.body,500, 300);
@@ -49,6 +47,8 @@ function initialize() {
 
     /*Notifications Box*/
 
+    var notifications = document.getElementsByClassName('notification');
+    
     var notifications_box = new Box('notifications_box', document.body, 500,300);
 
     var but_notifications_quit = new Button('notifications_quit', 'quit');
@@ -56,26 +56,46 @@ function initialize() {
     var but_notifications_next = new Button('notifications_next', 'next');
     
     but_notifications_quit.onclick(function() { notifications_box.close(); });
-    but_notifications_prev.onclick(function() { notifications_box.close(); });
-    but_notifications_next.onclick(function() { notifications_box.close(); });
+    // display the previous notification
+    but_notifications_prev.onclick(function() { 
+	for(var j = 0; j < notifications.length; j++) {
+	    if(notifications[j].getAttribute('active')) {
+		// we take the modulo to do a circular review
+		// by clicking we access the function used to load the content
+		// trick to not rewrite the same code
+		notifications[(j-1)%notifications.length].click();
+		return false;
+	    }
+	}
+    });
+    // display the next notification
+    but_notifications_next.onclick(function() {
+	for(var j = 0; j < notifications.length; j++) {
+	    if(notifications[j].getAttribute('active')) {
+		notifications[(j+1)%notifications.length].click();
+		return false;
+	    }
+	}
+    });
     
-    notifications_box.addButton(but_notifications_prev);
-    notifications_box.addButton(but_notifications_next);
     notifications_box.addButton(but_notifications_quit);
-
+    notifications_box.addButton(but_notifications_next);
+    notifications_box.addButton(but_notifications_prev);
+    
     notifications_box.setTitle("Notifications");
     notifications_box.importHTML("source/notification.html");
 
-    
-    var notifications = document.getElementsByClassName('notification');
-   
     for(var i = 0; i < notifications.length; i++) {
-	// console.log(notifications[i]);
 	notifications[i].addEventListener('click', function() {
+	    for(var j = 0; j < notifications.length; j++) {
+		notifications[j].removeAttribute('active');
+	    }
 	    notifications_box.setTitle(this.getAttribute('data-title'));
 	    notifications_box.importHTML('source/notification-'+this.getAttribute('data-id')+'.html');
 	    notifications_box.open();
 	    notifications_box.show();
+	    // attribute used to find prev and next notifs
+	    this.setAttribute('active','true');
 	});
     }
 }
