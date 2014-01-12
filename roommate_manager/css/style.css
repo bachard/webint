@@ -301,6 +301,7 @@ footer {
     z-index:10;
     position:relative;
     margin:auto;
+    margin-top:20px;
     background-color:gray;
     /*border:1px solid #992C2C;*/
     border-radius: 3px;
