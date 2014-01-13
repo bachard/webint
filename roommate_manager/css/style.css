@@ -102,7 +102,7 @@ section.main {
 }
 
 section.submain {
-    padding: 20px 20px 20px 20px;
+    padding: 20px 20px 45px 20px;
     /*border:5px solid #00da71;*/
     background-color: #dbdbdb;
     /* margin-top: -5px; */
@@ -352,7 +352,6 @@ footer {
     -webkit-transition: height 1s;
     -o-transition: height 1s;
     overflow: hidden;
-    margin-top:10px;
 }
 
 .expense_box {
@@ -404,8 +403,7 @@ footer {
     margin-left:-4px;
     display:inline-block;
     width:240px;
-    margin-left:5px;
-    margin-right:5px;
+    margin : 0px 5px 20px 5px;
     height: 150px;
     vertical-align:top;
     border-radius: 5px;
@@ -455,6 +453,7 @@ footer {
     background-color: #B1B1B1;
     text-align: center;
     padding-top: 10px;
+    margin-bottom: 20px;
 }
 
 .roommate_block img {
@@ -579,10 +578,16 @@ input {
     font-family:inherit;
     font-size: 16px;
     font-weight: bold;
-    width: 120px;
+    width: 325px;
 }
 
-#amount {
+#input_amount {
     text-align: right;
+    width:80px;
 }
 
+#input_date {
+    width: 105px;
+    position: relative;
+    left: 6px;
+}
