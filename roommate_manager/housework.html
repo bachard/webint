@@ -6,11 +6,15 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" />
   </head>
   <body>
+    <header class="main_header">
+      <h1>Roommate Manager</h1>
+    </header>
+
     <section class="main_wrapper">
       <aside>
 	<div id="personal_info" class="test">
-	  <img src="img/profile_bastien.jpg" alt="Profile image" id="personal_img" draggable="true"/>
-	  <div id="nNotifs">3</div>
+	  <img src="img/profile_bastien.jpg" alt="Profile image">
+          <div id="nNotifs"><span>3</span></div>
 	</div>
 	<button id="add_expense" class="aside_button">Add an expense</button>
 	<section id="notifications" class="notifications">
@@ -37,39 +41,71 @@
 	</section>	
       </aside> 
       <section class="main">
-	<header class="main_header">
-	  <h1>Roommate Manager</h1>
-	</header>
 	<nav>
 	  <ul>
-	     <li><a href="expenses.html">expenses</a></li>
+	    <li><a href="expenses.html">expenses</a></li>
 	    <li><a href="roommates.html">roommates</a></li>
 	    <li><a href="synthesis.html">synthesis</a></li>
-	     <li class="active"><a href="housework.html">housework</a></li>
+	    <li class="active"><a href="housework.html">housework</a></li>
 	    <li><a href="history.html">history</a></li>
 	  </ul>
 	</nav>
-	<section>
+	<section class="submain">
 	  <article>
-	    <header>
-	      <h1>housework page: TODO</h1>
-	    </header>
-	    <section>
-	      <h2>Lorem ipsum</h2>
-	      <p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-		Phasellus molestie erat vel felis viverra, in interdum eros sollicitudin.
-		Aliquam erat volutpat. Curabitur tristique leo vitae dolor aliquet bibendum.
-		In ornare, magna convallis rutrum hendrerit, odio ipsum ullamcorper sapien, a facilisis sed. 
-	      </p>
+	    <section class="housework">
+	      <table id="housework">
+		<caption><h2>Synthesis</h2></caption>
+		<thead> <!-- En-tête du tableau -->
+		  <tr>
+		    <th>Lundi</th>
+		    <th>Mardi</th>
+		    <th>Mercredi</th>
+		    <th>Jeudi</th>
+		    <th>Vendredi</th>
+		    <th>Samedi</th>
+		    <th>Dimanche</th>
+		  </tr>
+		</thead>
+		<tbody> <!-- Corps du tableau -->
+		  <tr>
+		    <td>Lundi</td>
+		    <td>Mardi</td>
+		    <td>Mercredi</td>
+		    <td>Jeudi</td>
+		    <td>Vendredi</td>
+		    <td>Samedi</td>
+		    <td>Dimanche</td>
+		  </tr>
+		  <tr>
+		    <td>Lundi</td>
+		    <td>Mardi</td>
+		    <td>Mercredi</td>
+		    <td>Jeudi</td>
+		    <td>Vendredi</td>
+		    <td>Samedi</td>
+		    <td>Dimanche</td>
+		  </tr>
+		  <tr>
+		    <td>Lundi</td>
+		    <td>Mardi</td>
+		    <td>Mercredi</td>
+		    <td>Jeudi</td>
+		    <td>Vendredi</td>
+		    <td>Samedi</td>
+		    <td>Dimanche</td>
+		  </tr>
+		  <tr>
+		    <td>Lundi</td>
+		    <td>Mardi</td>
+		    <td>Mercredi</td>
+		    <td>Jeudi</td>
+		    <td>Vendredi</td>
+		    <td>Samedi</td>
+		    <td>Dimanche</td>
+		  </tr>
+		</tbody>
+	      </table>
 	    </section>
-	    <section>
-	      <h2>Comments</h2>
-	      <p>
-		Great :)
-	      </p>
-	    </section>
-	  </article>
 	</section>
       </section>
       <footer>
