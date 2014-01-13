@@ -14,7 +14,7 @@ function initialize() {
     add_expense_box_validate.onclick(function() { add_expense_box.close() });
     add_expense_box.addButton(add_expense_box_quit);
     add_expense_box.addButton(add_expense_box_validate);    
-  
+    
     document.getElementById('add_expense').addEventListener('click', function() { 
 	add_expense_box.open();
 	add_expense_box.show();
@@ -35,8 +35,8 @@ function initialize() {
     profile_box_validate.onclick(function() { profile_box.close() });
     profile_box.addButton(profile_box_quit);
     profile_box.addButton(profile_box_validate);
-   
-  
+    
+    
     document.getElementById('personal_info').addEventListener('click', function() { 
 	profile_box.open();
 	profile_box.show();
@@ -103,6 +103,9 @@ function initialize() {
     }
 }
 
+/*************************/
+/*  TICK IMAGE           */
+/*************************/
 
 function tickImage(div){
     if (div.getElementsByClassName('imageTick').length==0){
@@ -117,4 +120,42 @@ function tickImage(div){
 	}
     }
 
+}
+
+/*************************/
+/*  ANIMATION            */
+/*************************/
+
+function toggle_box(button, box, cont_name) {
+    console.log(value);
+    var value = button.getElementsByTagName('span')[0];
+    value = value ? value : button;
+    console.log(value.innerHTML);
+    if(value.innerHTML == '+') {
+	value.innerHTML = '-';
+	animation(cont_name, box.getHeight());
+    }
+    else {
+	console.log('closure');
+	value.innerHTML = '+';
+	closure(cont_name);
+    }
+}
+
+function close_box(button, box, cont_name) {
+    var value = button.getElementsByTagName('span')[0];
+    value = value ? value : button;
+    // console.log(value.innerHTML);
+    if(value.innerHTML == '-') {
+	value.innerHTML = '+';
+	closure(cont_name);
+    }
+}
+
+function animation(cont_name, height) {
+    document.getElementById(cont_name).style.height=height;
+}  
+
+function closure(cont_name){
+    document.getElementById(cont_name).style.height=0;
 }

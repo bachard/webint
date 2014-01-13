@@ -325,6 +325,7 @@ footer {
     -webkit-transition: height 1s;
     -o-transition: height 1s;
     overflow: hidden;
+    margin-top:10px;
 }
 
 .expense_box {
@@ -335,7 +336,6 @@ footer {
     /*border:1px solid #992C2C;*/
     border-radius:3px;
     margin-bottom:10px;
-    margin-top:10px;
 }
 
 .expense_box td, th {
