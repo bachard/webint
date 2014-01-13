@@ -22,6 +22,20 @@ button {
     border-radius: 5px;
 }
 
+label {
+    text-align:left;
+    display:block;
+    float:left;
+    width:200px;
+} 
+
+input {
+    font-family:inherit;
+    font-size: 16px;
+    font-weight: bold;
+    width: 250px;
+}
+
 /* LOGIN */
 
 header.login_header {
@@ -117,7 +131,7 @@ section.main {
 }
 
 section.submain {
-    padding: 20px 20px 45px 20px;
+    padding: 35px 20px 45px 20px;
     /*border:5px solid #992C2C;*/
     background-color: #dbdbdb;
     /* margin-top: -5px; */
@@ -345,10 +359,18 @@ footer {
     overflow-y:auto;
 }
 
+.dialog_body p {
+    margin: 2px; 
+}
+
 #add_expense_box .dialog_body {
     padding-top: 5px;
     padding-left: 20px;
 } 
+
+#add_expense_box label {
+    width: 100px;
+}
 
 .dialog_buttons {
     background-color:#992C2C;
@@ -394,7 +416,6 @@ footer {
     background-color:#B1B1B1;
     /*border:1px solid #992C2C;*/
     border-radius: 5px;
-    margin-bottom:10px;
 }
 
 .expense_box td, th {
@@ -428,6 +449,10 @@ footer {
     height:25px;
     margin-right:10px;
     margin-bottom:10px;
+}
+
+#zone_personal {
+    margin-top: 25px;
 }
 
 /* EXPENSE BLOCK STYLE */
@@ -507,6 +532,15 @@ footer {
 .roommate_block h3 {
     font-size: 30px;
     margin-top: 15px;
+}
+
+.roommate_scroll {
+    z-index:10;
+    position:relative;
+    margin:auto;
+    background-color:#B1B1B1;
+    border-radius: 5px;
+    margin-bottom:10px;
 }
 
 /* HISTORY BLOCK STYLE */
@@ -607,13 +641,6 @@ footer {
     font-weight:bold;
 }
 
-input {
-    font-family:inherit;
-    font-size: 16px;
-    font-weight: bold;
-    width: 325px;
-}
-
 #input_amount {
     text-align: right;
     width:80px;
@@ -621,8 +648,6 @@ input {
 
 #input_date {
     width: 105px;
-    position: relative;
-    left: 6px;
 }
 
 .housework {
@@ -630,7 +655,7 @@ input {
 }
 
 .housework h2 {
-    margin-bottom:10px;
+    margin-bottom:20px;
     margin-top:-10px;
 }
 
@@ -645,7 +670,6 @@ input {
 
 .housework table {
     margin:auto;
-    margin-top:15px;
 }
 
 /************************/
