@@ -13,38 +13,48 @@ window.onload=function() {
 	roommates_boxes[i].addButton(roommates_but[i]);
     }
     
-    roommates_but[0].onclick(function() { closure(0) });
-    roommates_but[1].onclick(function() { closure(1) });
-    roommates_but[2].onclick(function() { closure(2) });
-    roommates_but[3].onclick(function() { closure(3) });
     
+    roommates_but[0].onclick(function() { 
+	close_box(document.getElementById(roommates_list[0]+'_button'), roommates_boxes[0], 'zone_'+roommates_list[0]);
+    });
+    roommates_but[1].onclick(function() { 
+	close_box(document.getElementById(roommates_list[1]+'_button'), roommates_boxes[1], 'zone_'+roommates_list[1]);
+    });
+    roommates_but[2].onclick(function() { 
+	close_box(document.getElementById(roommates_list[2]+'_button'), roommates_boxes[2], 'zone_'+roommates_list[2]);
+    });
+
+    roommates_but[3].onclick(function() { 
+	close_box(document.getElementById(roommates_list[3]+'_button'), roommates_boxes[3], 'zone_'+roommates_list[3]);
+    });
+        
     document.getElementById('bastien_button').addEventListener('click', function(){
-	animation(0)
+	roommates_animation(0, this);
     });
     
     document.getElementById('geoffrey_button').addEventListener('click',function(){
-	animation(1)
+	roommates_animation(1, this);
     });
     
     document.getElementById('guillaume_button').addEventListener('click',function(){
-	animation(2)
-    });
-    document.getElementById('remi_button').addEventListener('click',function(){
-	animation(3)
+	roommates_animation(2, this);
     });
 
-    function animation(i) {
+    document.getElementById('remi_button').addEventListener('click',function(){
+	roommates_animation(3, this);
+    });
+
+    for(var j = 0; j < roommates_list.length; j++) {
+	roommates_boxes[j].open();
+	roommates_boxes[j].show();
+    }
+
+    function roommates_animation(i, button) {
 	for(var j = 0; j < roommates_list.length; j++) {
 	    if(j!=i) {
-		closure(j);
+		close_box(document.getElementById(roommates_list[j]+'_button'), roommates_boxes[j], 'zone_'+roommates_list[j]);
 	    }
 	}
-	roommates_boxes[i].open();
-	document.getElementById('zone_'+roommates_list[i]).style.height=130+'px';
-	roommates_boxes[i].show();
-    }  
-
-    function closure(i) {
-	document.getElementById('zone_'+roommates_list[i]).style.height=0+'px';
+	toggle_box(button, roommates_boxes[i], 'zone_'+roommates_list[i]);
     }
 }

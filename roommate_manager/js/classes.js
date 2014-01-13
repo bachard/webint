@@ -66,6 +66,14 @@ function Box(id, parent, width, height, box_class='dialog_box', header_class='di
 	this.element.style.height = height + 'px';
     }
 
+    this.getWidth = function(width) {
+	return this.element.style.width;
+    }
+
+    this.getHeight = function(height) {
+	return this.element.style.height;
+    }
+
     this.addButton = function(button) {
 	this.buttons[button.id] = button;
 	this.refresh();
