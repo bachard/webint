@@ -1,8 +1,17 @@
+/*
+ * #00c624: vert
+ * #992C2C: rouge
+ * #6db87b: vert-bleu
+ * #e57b6d: rose déguelasse
+ * #00da71: vert swaggy
+ */
+
 * { margin: 0; padding: 0; outline: 0; }
 
 body{
     height:100%;
     margin:auto;
+    font-family:Tahoma, Geneva, sans-serif;
 }
 
 button {
@@ -17,7 +26,8 @@ header.main_header {
     top:0;
     height:40px;
     text-align:center;
-    background-color:#992C2C;
+    background-color:#00da71;
+    background:url('../img/header.png') repeat-x;
     color:white;
     font-weight:bold;
     box-shadow: 2px 4px 3px rgba(236, 236, 236, 0.9);
@@ -93,7 +103,7 @@ section.main {
 
 section.submain {
     padding: 20px 20px 20px 20px;
-    /*border:5px solid #992C2C;*/
+    /*border:5px solid #00da71;*/
     background-color: #dbdbdb;
     /* margin-top: -5px; */
     /* box-shadow: 0 11px 12px -7px rgba(0, 0, 0, 0.1) inset; */
@@ -138,7 +148,7 @@ aside {
     vertical-align: top;
     width:190px;
     height:600px;
-    background-color:#992C2C;
+    background-color:#00da71;
     margin-top:60px;
     border-radius: 5px;
     box-shadow: 2px 4px 3px rgba(236, 236, 236, 0.9);
@@ -245,7 +255,7 @@ aside #personal_info {
 }
 
 .notification_popup thead {
-    background-color:#992C2C;
+    background-color:#00da71;
     color:#ffffff;
 }
 
@@ -280,7 +290,7 @@ footer {
     top: 200px;
     left: 30%;
     background-color:#cccccc;
-    border:1px solid #992C2C;
+    border:1px solid #00da71;
     border-radius: 5px;
 }
 
@@ -289,7 +299,7 @@ footer {
 }
 
 .dialog_header {
-    background-color:#992C2C;
+    background-color:#00da71;
     color:white;
     padding:2px;
     text-align:center;
@@ -308,7 +318,7 @@ footer {
 } 
 
 .dialog_buttons {
-    background-color:#992C2C;
+    background-color:#00da71;
     color:white;
     height:24px;
     padding:5px 0px 5px 0px;
@@ -350,7 +360,7 @@ footer {
     position:relative;
     margin:auto;
     background-color:#B1B1B1;
-    /*border:1px solid #992C2C;*/
+    /*border:1px solid #00da71;*/
     border-radius: 5px;
     margin-bottom:10px;
 }
@@ -360,7 +370,7 @@ footer {
 }
 
 .expense_box thead {
-    background-color:#992C2C;
+    background-color:#00da71;
     color:#ffffff;
 }
 
@@ -527,7 +537,7 @@ footer {
     font-size:56px;
     text-align:center;
     color:white;
-    background-color:#992C2C;
+    background-color:#00da71;
 }
 
 .formulaire {
