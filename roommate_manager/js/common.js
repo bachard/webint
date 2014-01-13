@@ -111,7 +111,7 @@ function tickImage(div){
     if (div.getElementsByClassName('imageTick').length==0){
         var childImage = document.createElement('img');
         childImage.className = 'imageTick';
-        childImage.src ='img/profile_remi.jpg';
+        childImage.src ='img/checkImage.png';
         div.appendChild(childImage);}
     else {
 	childs=div.getElementsByClassName('imageTick');
