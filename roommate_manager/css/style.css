@@ -479,6 +479,7 @@ footer {
     vertical-align: top;
     width: 125px;
     height: 125px;
+    cursor:pointer;
  }
 
 .container_profile_image .imageTick {
