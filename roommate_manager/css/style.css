@@ -337,6 +337,7 @@ footer {
     -webkit-transition: height 1s;
     -o-transition: height 1s;
     overflow: hidden;
+    margin-top:10px;
 }
 
 .expense_box {
@@ -347,7 +348,6 @@ footer {
     /*border:1px solid #992C2C;*/
     border-radius: 5px;
     margin-bottom:10px;
-    margin-top:20px;
 }
 
 .expense_box td, th {
@@ -373,6 +373,14 @@ footer {
     position: absolute;
     right: 0px;
     bottom: 0px;
+}
+
+.expense_buttons button {
+    border-radius:100%;
+    width:25px;
+    height:25px;
+    margin-right:10px;
+    margin-bottom:10px;
 }
 
 /* EXPENSE BLOCK STYLE */
@@ -482,6 +490,9 @@ footer {
     position:relative;
     left:700px;
     top:80px;
+    border-radius:100%;
+    width:25px;
+    height:25px;
 }
 
 /* STYLE FOR TICK IMAGE */
