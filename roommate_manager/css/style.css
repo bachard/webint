@@ -390,6 +390,7 @@ footer {
 .expense_block .detail_button {
     position:relative;
     left:210px;
+    top:109px;
 }
 
 .detail_button_cont {
@@ -486,6 +487,7 @@ footer {
 
 .formulaire {
     text-align:center;
+    margin-top:100px;
 }
 
 .login_button {
@@ -501,4 +503,9 @@ footer {
 
 .login{
     background-color:#DBDBDB;
+}
+
+.login_footer {
+    position:absolute;
+    bottom:0px;
 }
