@@ -101,6 +101,10 @@ function initialize() {
 	    this.setAttribute('active','true');
 	});
     }
+  
+    $("body").on('focus',"#input_date",function() {
+	$(this).datepicker();
+    });
 }
 
 /*************************/
