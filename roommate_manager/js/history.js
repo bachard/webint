@@ -1,14 +1,12 @@
 window.onload=function() { 
     initialize();
     /*Dialog Box Specific*/
-    var nov_box = new Box('nov_box', document.getElementById('zone_nov'), 500, 100, 'expense_box', 'expense_header', 'expense_body', 'expense_buttons');
-    var dec_box = new Box('dec_box', document.getElementById('zone_dec'), 500, 100, 'expense_box', 'expense_header', 'expense_body', 'expense_buttons');
+    var nov_box = new Box('nov_box', document.getElementById('zone_nov'), 600, 300, 'expense_box', 'expense_header', 'expense_body', 'expense_buttons');
+    var dec_box = new Box('dec_box', document.getElementById('zone_dec'), 600, 300, 'expense_box', 'expense_header', 'expense_body', 'expense_buttons');
 
-    nov_box.setTitle("Summary of November");
-    nov_box.setBody("Mettez ce que vous voulez");
+    nov_box.importHTML("source/november.html");
 
-    dec_box.setTitle("Summary of December");
-    dec_box.setBody("Mettez ce que vous voulez");
+    dec_box.importHTML("source/december.html");
 
     var nov_box_but = new Button('nov_box_but', '-');
     var dec_box_but = new Button('dec_box_but', '-');

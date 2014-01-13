@@ -2,7 +2,7 @@ function initialize() {
     
     /* Add an Expense DialogBox*/
     
-    var add_expense_box = new Box('add_expense_box', document.body,650, 300);
+    var add_expense_box = new Box('add_expense_box', document.body,580, 300);
     
     add_expense_box.setTitle("Add An Expense");
     add_expense_box.importHTML("source/add_expense.html");

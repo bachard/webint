@@ -289,6 +289,10 @@ footer {
     border-radius: 5px;
 }
 
+#add_expense_box p {
+    margin: 5px 0px 0px 5px;
+}
+
 .dialog_header {
     background-color:#00da71;
     color:white;
@@ -299,10 +303,14 @@ footer {
 }
 
 .dialog_body {
-    margin:5px;
     overflow-x:auto;
-    overflow-y:scroll;
+    overflow-y:auto;
 }
+
+#add_expense_box .dialog_body {
+    padding-top: 5px;
+    padding-left: 20px;
+} 
 
 .dialog_buttons {
     background-color:#00da71;
@@ -501,6 +509,8 @@ footer {
 
 .container_profile_image {
     display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
     vertical-align: top;
     width: 125px;
     height: 125px;
