@@ -597,6 +597,40 @@ footer {
     bottom: 129px;
 }
 
+/* for treasurer */
+
+#treasurer {
+    border-radius:5px;
+}
+
+#treasurer_choice {
+    margin:auto;
+    display:block;
+    width:150px;
+    margin-top:10px;
+}
+
+.container_profile_image_50 {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left:10px;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    cursor:pointer;
+ }
+
+.container_profile_image_50 img {
+    border-radius: 5px;
+ }
+
+.container_profile_image_50 .imageTick {
+    position: relative;
+    bottom: 54px;
+}
+
+
 /* LOGIN STYLE */
 
 .main_title {
@@ -677,11 +711,12 @@ footer {
 /************************/
 
 #synthesis {
-    
+    margin:auto;
 }
 
-#debt {
-    
+#debts {
+    margin:auto;
+    margin-top:20px;
 }
 
 #summary {

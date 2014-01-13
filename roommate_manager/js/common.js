@@ -127,6 +127,27 @@ function tickImage(div){
 }
 
 /*************************/
+/*  SELECT IMAGE         */
+/*************************/
+
+function selectImage(div) {
+    
+    childs = div.parentNode.getElementsByClassName('imageTick');
+
+    for (var i=0;i<childs.length;i++){
+	childs[i].parentNode.removeChild(childs[i]);
+    }
+
+    if (div.getElementsByClassName('imageTick').length==0){
+	var childImage = document.createElement('img');
+        childImage.className = 'imageTick';
+        childImage.src = 'img/checkImage_50.png';
+        div.appendChild(childImage);
+    }
+
+}
+
+/*************************/
 /*  ANIMATION            */
 /*************************/
 

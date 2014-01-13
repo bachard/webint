@@ -1,6 +1,6 @@
 window.onload=function() { 
     /*Table Format*/
-    initialize()
+    initialize();
     /*
     var arrayLines = document.getElementById("synthesis").rows; //l'array est stocké dans une variable
     

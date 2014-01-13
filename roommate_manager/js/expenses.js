@@ -4,10 +4,10 @@ window.onload=function() {
     var balance_box = new Box('balance_box', document.getElementById('zone_balance'), 500, 100, 'expense_box', 'expense_header', 'expense_body', 'expense_buttons');
     var personal_box = new Box('personal_box', document.getElementById('zone_personal'), 500, 250, 'expense_box', 'expense_header', 'expense_body', 'expense_buttons');
 
-    balance_box.setTitle("Balance details");
+ 
     balance_box.importHTML("source/balance.html");
 
-    personal_box.setTitle("Personal Expenses details");
+ 
     personal_box.importHTML("source/list_expenses.html");
 
     var balance_box_but = new Button('balance_box_but', '-');
