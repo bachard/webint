@@ -179,11 +179,14 @@ aside #personal_info {
 
 .aside_button {
     display:block;
+    width: 170px;
+    height: 50px;
     border: 1px solid white;
     padding: 5px;
     margin:auto;
     margin-top: 25px;
     font-weight: bold;
+    font-size: 20px;
     border-radius: 5px;
 }
 
@@ -193,7 +196,7 @@ aside #personal_info {
     width:180px;
     /* background:#ffffff; */
     margin:auto;
-    margin-top:50px;
+    margin-top:20px;
     padding:5px;
 }
 
@@ -269,6 +272,8 @@ footer {
 
 
 .dialog_box {
+    font-size: 18px;
+    font-weight: bold;
     z-index:10;
     margin:auto;
     position: absolute;
@@ -559,3 +564,15 @@ footer {
     left:35%;
     font-weight:bold;
 }
+
+input {
+    font-family:inherit;
+    font-size: 16px;
+    font-weight: bold;
+    width: 120px;
+}
+
+#amount {
+    text-align: right;
+}
+
