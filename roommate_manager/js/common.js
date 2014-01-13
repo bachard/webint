@@ -2,13 +2,13 @@ function initialize() {
     
     /* Add an Expense DialogBox*/
     
-    var add_expense_box = new Box('add_expense_box', document.body,580, 300);
+    var add_expense_box = new Box('add_expense_box', document.body,580, 305);
     
     add_expense_box.setTitle("Add An Expense");
     add_expense_box.importHTML("source/add_expense.html");
     
-    var add_expense_box_quit = new Button('quit', 'quit');
-    var add_expense_box_validate = new Button('validate', 'ok');
+    var add_expense_box_quit = new Button('quit', 'cancel');
+    var add_expense_box_validate = new Button('validate', 'validate');
     
     add_expense_box_quit.onclick(function() { add_expense_box.close() });
     add_expense_box_validate.onclick(function() { add_expense_box.close() });
