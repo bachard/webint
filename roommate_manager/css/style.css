@@ -389,8 +389,8 @@ footer {
 
 .expense_block .detail_button {
     position:relative;
-    left:210px;
-    top:109px;
+    left:200px;
+    top:0px;
 }
 
 .detail_button {
@@ -518,4 +518,10 @@ footer {
 .login_footer {
     position:absolute;
     bottom:0px;
+}
+
+.login_slogan {
+    font-family:trebuchet, helvetica, sans-serif;
+    text-align:center;
+    font-weight:bold;
 }
