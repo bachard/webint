@@ -6,7 +6,6 @@ window.onload=function() {
     var roommates_list=['bastien','geoffrey','guillaume','remi'];
     for (var i=0;i<roommates_list.length;i++){
 	roommates_boxes[i] = new Box(roommates_list[i]+'_box', document.getElementById('zone_'+roommates_list[i]), 500, 100, 'expense_box', 'expense_header', 'expense_body', 'expense_buttons');
-	roommates_boxes[i].setTitle(roommates_list[i]);
 	roommates_boxes[i].importHTML("source/profile_"+roommates_list[i]+".html");
 	roommates_but[i] = new Button(roommates_list[i]+'_expand', '-');
 	
