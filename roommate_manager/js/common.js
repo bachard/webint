@@ -127,16 +127,13 @@ function tickImage(div){
 /*************************/
 
 function toggle_box(button, box, cont_name) {
-    console.log(value);
     var value = button.getElementsByTagName('span')[0];
     value = value ? value : button;
-    console.log(value.innerHTML);
     if(value.innerHTML == '+') {
 	value.innerHTML = '-';
 	animation(cont_name, box.getHeight());
     }
     else {
-	console.log('closure');
 	value.innerHTML = '+';
 	closure(cont_name);
     }
@@ -145,7 +142,6 @@ function toggle_box(button, box, cont_name) {
 function close_box(button, box, cont_name) {
     var value = button.getElementsByTagName('span')[0];
     value = value ? value : button;
-    // console.log(value.innerHTML);
     if(value.innerHTML == '-') {
 	value.innerHTML = '+';
 	closure(cont_name);
