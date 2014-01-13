@@ -1,6 +1,7 @@
 window.onload=function() { 
     /*Table Format*/
     initialize()
+    /*
     var arrayLines = document.getElementById("synthesis").rows; //l'array est stocké dans une variable
     
     for(var i = 0; i < arrayLines.length; i++)
@@ -15,4 +16,5 @@ window.onload=function() {
             arrayLines[i].style.backgroundColor = "#829eeb";
 	}
     }
+    */
 }
