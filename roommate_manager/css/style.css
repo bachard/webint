@@ -497,7 +497,9 @@ footer {
 
 .formulaire {
     text-align:center;
-    margin-top:9%;
+    position:absolute;
+    top:25%;
+    left:40%;
 }
 
 .login_button {
@@ -521,7 +523,9 @@ footer {
 }
 
 .login_slogan {
+    position:absolute;
+    top:18%;
     font-family:trebuchet, helvetica, sans-serif;
-    text-align:center;
+    left:35%;
     font-weight:bold;
 }
